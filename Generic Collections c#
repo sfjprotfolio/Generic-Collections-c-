@@ -1,0 +1,85 @@
+using System.Collections.Generic;
+
+namespace Collection
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+
+        // Generic collections
+
+            {
+
+
+                List<int> myList = new List<int>();
+
+                myList.Add(20);
+                myList.Add(30);
+                myList.Add(40);
+                myList.Add(50);
+                myList.Add(60);
+
+                foreach (int i in myList)
+                {
+                    Console.WriteLine(i);
+                }
+
+
+
+
+
+                Dictionary<string,string> table = new Dictionary<string,string>();
+
+
+                table.Add("id","01");
+                table.Add("Name", "Fahad"); 
+                table.Add("email", "fahadjamal01@gmail.com");
+
+
+                foreach (var item in table)
+                {
+                    Console.WriteLine($" Key {item.Key} : Value {item.Value}  ");
+                }
+
+
+
+
+
+
+                Queue<int> queue = new Queue<int>();
+
+                queue.Enqueue(20);
+                queue.Enqueue(30);
+                queue.Enqueue(50);
+
+                foreach (int q in queue)
+                {
+                    Console.WriteLine(q);
+                }
+
+            }
+
+
+
+        }
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+    
+
